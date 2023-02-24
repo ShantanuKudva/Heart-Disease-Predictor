@@ -67,7 +67,7 @@ print(X.shape, X_train.shape, X_test.shape)
 KNeighborsRegressor
 """
 
-model=KNeighborsRegressor()
+model=LogisticRegression()
 
 #training the LogisticRegression model with training data
 model.fit(X_train, Y_train)
