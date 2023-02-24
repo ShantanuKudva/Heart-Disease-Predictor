@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.linear_model import kneighborsregressor
+from sklearn.neighbors import KNeighborsRegressor
 from sklearn.metrics import accuracy_score
 
 """Data collection and processing """
@@ -64,10 +64,10 @@ print(X.shape, X_train.shape, X_test.shape)
 
 """Model Training
 
-Logistic Regression
+KNeighborsRegressor
 """
 
-model=kneighborsregressor()
+model=KNeighborsRegressor()
 
 #training the LogisticRegression model with training data
 model.fit(X_train, Y_train)
